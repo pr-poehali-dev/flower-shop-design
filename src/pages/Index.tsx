@@ -66,7 +66,7 @@ const FlyFlower = () => {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-white">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-pink-100">
-        <nav className="container mx-auto px-6 py-4">
+        <nav className="container mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold text-primary">
               FlyFlower
@@ -110,7 +110,7 @@ const FlyFlower = () => {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="py-20 px-6">
+      <section id="hero" className="py-12 md:py-20 px-4 md:px-6">
         <div className="container mx-auto text-center">
           <div className="mb-8">
             <div className="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
@@ -140,7 +140,7 @@ const FlyFlower = () => {
       </section>
 
       {/* Catalog Section */}
-      <section id="catalog" className="py-20 px-6 bg-white/50">
+      <section id="catalog" className="py-12 md:py-20 px-4 md:px-6 bg-white/50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -150,7 +150,7 @@ const FlyFlower = () => {
               Выберите идеальный букет для любого случая
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
             {bouquets.map((bouquet) => (
               <Card key={bouquet.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
                 <div className="h-64 overflow-hidden">
@@ -160,7 +160,7 @@ const FlyFlower = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="p-4 md:p-6">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                     {bouquet.name}
                   </h3>
@@ -187,7 +187,7 @@ const FlyFlower = () => {
       </section>
 
       {/* Order Form Section */}
-      <section id="order-form" className="py-20 px-6">
+      <section id="order-form" className="py-12 md:py-20 px-4 md:px-6">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -197,7 +197,7 @@ const FlyFlower = () => {
               Заполните форму, и мы свяжемся с вами для подтверждения заказа
             </p>
           </div>
-          <Card className="p-8 shadow-2xl">
+          <Card className="p-4 md:p-8 shadow-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Ваше имя</Label>
@@ -261,12 +261,12 @@ const FlyFlower = () => {
       </section>
 
       {/* Contact/Map Section */}
-      <section id="contact" className="py-20 px-6 bg-white/50">
+      <section id="contact" className="py-12 md:py-20 px-4 md:px-6 bg-white/50">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">
             Мы находимся здесь
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
             <div className="text-left space-y-6">
               <div className="flex items-center space-x-4">
                 <Icon name="MapPin" size={24} className="text-primary" />
@@ -298,9 +298,9 @@ const FlyFlower = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12 px-6">
+      <footer className="bg-gray-800 text-white py-8 md:py-12 px-4 md:px-6">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <div>
               <h3 className="text-2xl font-bold text-primary mb-4">FlyFlower</h3>
               <p className="text-gray-300">
